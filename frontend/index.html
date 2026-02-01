@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3 Chat</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Live Chat</p>
+          <h1>D3 Chat</h1>
+          <p class="subtitle">A fast room-based chat for friends, teams, and quick conversations.</p>
+          <p class="tagline">Didi × 3 — Fast, simple, shared chat rooms.</p>
+        </div>
+        <div class="header-chip">D3 Chat</div>
+      </header>
+
+      <div class="entry-screen" id="entryScreen">
+        <div class="login-card">
+          <h2>Join a room</h2>
+          <label>
+            Your name
+            <input id="usernameInput" type="text" placeholder="Enter your name" autocomplete="off" />
+          </label>
+          <label>
+            Room ID
+            <input id="roomInput" type="text" placeholder="Enter room code" autocomplete="off" />
+          </label>
+          <button id="joinButton" type="button">Join Chat</button>
+        </div>
+      </div>
+
+      <div class="chat-screen hidden" id="chatScreen">
+        <section class="chat-meta">
+          <div><strong>You:</strong> <span id="usernameLabel"></span></div>
+          <div><strong>Room:</strong> <span id="roomLabel"></span></div>
+        </section>
+
+        <div id="chatContainer" class="chat-container"></div>
+
+        <form id="chatForm" class="chat-form">
+          <input
+            id="messageInput"
+            type="text"
+            placeholder="Type your message..."
+            autocomplete="off"
+          />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
