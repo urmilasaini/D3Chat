@@ -1,14 +1,4 @@
----
-title: D3 Chat
-emoji: "💚"
-sdk: docker
-tags:
-  - chat
-  - fastapi
-  - frontend
-  - realtime
-  - room-chat
----
+
 
 # D3 Chat
 
